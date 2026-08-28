@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Así eres tú</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/happy.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="stars-bg"></div>
+
+<div class="trail-wrap">
+  <div class="trail-line"></div>
+  <div class="trail-dots" id="trailDots"></div>
+</div>
+
+<nav class="side-nav" id="sideNav"></nav>
+
+<main class="cualidades-main">
+  <div class="floaty-layer">
+    <span class="floaty" style="left:8%; top:15%; animation-delay:0s;">✨</span>
+    <span class="floaty" style="left:88%; top:22%; animation-delay:1.4s;">💫</span>
+    <span class="floaty" style="left:15%; top:75%; animation-delay:2.6s;">⭐</span>
+    <span class="floaty" style="left:92%; top:70%; animation-delay:.8s;">✨</span>
+    <span class="floaty" style="left:50%; top:8%; animation-delay:2s;">🌸</span>
+    <span class="floaty" style="left:5%; top:45%; animation-delay:3.2s;">💜</span>
+  </div>
+  <div class="wrap">
+    <p class="eyebrow">Así eres tú</p>
+    <h2>Toca cada palabra</h2>
+    <p class="sub-label">seis cosas que quiero que nunca olvides sobre ti</p>
+
+    <div class="progress-track">
+      <div class="bar"><div class="bar-fill" id="progressFill"></div></div>
+      <span class="count" id="progressCount">0 de 6 descubiertas</span>
+    </div>
+
+    <div class="cards-grid" id="cardsGrid">
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><div class="card-icon">🌳</div><div class="word">Fuerte</div><div class="tap">toca aquí</div></div>
+          <div class="flip-back"><span class="checkmark">✓</span>Sigues estudiando y avanzando incluso cansada. Eso no es debilidad, es resistencia pura.</div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><div class="card-icon">💜</div><div class="word">Cariñosa</div><div class="tap">toca aquí</div></div>
+          <div class="flip-back"><span class="checkmark">✓</span>Escuchas y apoyas como pocas personas lo hacen, incluso cuando tú también la estás pasando mal.</div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><div class="card-icon">✨</div><div class="word">Carismática</div><div class="tap">toca aquí</div></div>
+          <div class="flip-back"><span class="checkmark">✓</span>Tímida al inicio, pero cuando confías, tu energía y tu alegría se sienten de verdad.</div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><div class="card-icon">🦋</div><div class="word">Valiente</div><div class="tap">toca aquí</div></div>
+          <div class="flip-back"><span class="checkmark">✓</span>Tienes miedo y aun así sigues caminando hacia lo que sueñas. Eso es valentía real.</div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><div class="card-icon">🌱</div><div class="word">En crecimiento</div><div class="tap">toca aquí</div></div>
+          <div class="flip-back"><span class="checkmark">✓</span>Tienes inseguridades, como todos, pero te esfuerzas todos los días por mejorar. Eso ya es mucho.</div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><div class="card-icon">⭐</div><div class="word">Completa</div><div class="tap">toca aquí</div></div>
+          <div class="flip-back"><span class="checkmark">✓</span>No necesitas ser perfecta. Ya eres, tal cual eres ahora, alguien admirable de verdad.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="continue-wrap">
+      <a class="continue-btn" href="cierre.html">Continuar <span class="arrow">→</span></a>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

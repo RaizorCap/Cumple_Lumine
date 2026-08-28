@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz cumpleaños</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/happy.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="stars-field" id="starsField">
+  <div class="ambient-glow"></div>
+</div>
+<div class="sparks-layer" id="sparksLayer"></div>
+<div class="confetti-layer" id="confettiLayer"></div>
+
+<div class="trail-wrap">
+  <div class="trail-line"></div>
+  <div class="trail-dots" id="trailDots"></div>
+</div>
+
+<nav class="side-nav" id="sideNav"></nav>
+
+<main class="cierre-main">
+  <div class="wrap cierre-content" id="cierreContent">
+    <p class="eyebrow">Feliz cumpleaños</p>
+
+    <div class="gift-stage">
+      <div class="gift-box" id="giftBox">
+        <div class="gift-lid" id="giftLid">
+          <div class="bow">
+            <div class="loop left"></div>
+            <div class="loop right"></div>
+            <div class="knot"></div>
+          </div>
+        </div>
+        <div class="gift-base"></div>
+      </div>
+      <div class="gift-hint" id="giftHint">toca el regalo</div>
+    </div>
+  </div>
+</main>
+
+<div class="welcome-modal" id="cierreModal">
+  <div class="welcome-card cierre-card">
+    <p class="eyebrow">Feliz cumpleaños</p>
+    <h1 class="welcome-title">Feliz cumpleaños, Luminé</h1>
+    <p>Ya son 19. Ojalá pudiera estar ahí para darte un abrazo de verdad y entregarte algo más que una página web, pero la distancia no me deja por ahora. Aun así, quiero que sepas que estoy a una sola llamada o un mensaje de distancia para ir donde estés.</p>
+    <p>Sé que casi nunca coincidimos por los horarios, que ambos andamos ocupados, y que no siempre pensamos igual en todo. Pero eso nunca ha cambiado lo que siento como amigo: te voy a seguir apoyando, y si algún día estás en problemas, pongo las manos al fuego por sacarte de ahí.</p>
+
+    <div class="promesa">"En esta vida no vas a estar sola. Aunque no compartamos las mismas ideas, siempre vas a tener mi apoyo."</div>
+
+    <p class="firma-final">Con cariño, tu amigo Roly</p>
+    <p class="fecha">para Milagros Luminé — 19 años</p>
+
+    <button class="last-detail-btn" id="lastDetailBtn"><span class="btn-icon">✨</span> Último detalle</button>
+  </div>
+</div>
+
+<div class="keepsake-modal" id="keepsakeModal">
+  <div class="keepsake-card">
+    <button class="modal-close" id="keepsakeClose" aria-label="Cerrar">×</button>
+    <p class="eyebrow">Un detalle más</p>
+    <h2 class="keepsake-title">Un recuerdo para guardar</h2>
+    <p class="keepsake-intro">Sube una foto tuya y arma, con la mía, una tarjeta para guardar de este cumpleaños.</p>
+
+    <div class="keepsake-preview">
+      <div class="keepsake-photos">
+        <div class="keepsake-photo-slot filled">
+          <img src="img/roly.jpg" alt="Roly">
+          <span class="slot-label">Roly</span>
+        </div>
+        <div class="keepsake-photo-slot" id="uploadSlot">
+          <label for="photoUpload" class="upload-label" id="uploadLabel">
+            <span class="upload-icon">+</span>
+            <span>sube tu foto</span>
+          </label>
+          <img id="uploadedPreview" alt="Milagros" style="display:none;">
+          <input type="file" accept="image/*" id="photoUpload" class="visually-hidden">
+          <span class="slot-label">Luminé</span>
+        </div>
+      </div>
+
+      <p class="keepsake-words">Dos historias, un mismo cariño de siempre. Que esta imagen te recuerde, cada vez que la veas, todo lo que compartimos este año y todo lo que nos queda por vivir.</p>
+      <p class="keepsake-signature">Milagros Luminé · 19 años · con cariño, Roly</p>
+    </div>
+
+    <button class="save-btn" id="saveCardBtn" disabled><span class="btn-icon">⬇</span> Guardar tarjeta</button>
+    <p class="keepsake-hint" id="keepsakeHint">sube tu foto para poder guardarla</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
